@@ -1,0 +1,41 @@
+{
+  "name": "@smartearners/devops-cli",
+  "version": "1.0.0",
+  "description": "DevOps CLI for common development operations - backup, deploy, monitor, and more",
+  "main": "cli.js",
+  "bin": {
+    "devops": "./cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backup": "node cli.js backup ./",
+    "deploy": "node cli.js deploy",
+    "monitor": "node cli.js monitor",
+    "logs": "node cli.js logs",
+    "clean": "node cli.js clean --backups --logs"
+  },
+  "keywords": [
+    "devops",
+    "cli",
+    "backup",
+    "deploy",
+    "monitor",
+    "automation"
+  ],
+  "author": "Cherie <cherie@smartearners>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartearners/automate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smartearners/automate/issues"
+  },
+  "homepage": "https://github.com/smartearners/automate#readme",
+  "dependencies": {
+    "commander": "^12.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
